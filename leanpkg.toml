@@ -1,0 +1,8 @@
+[package]
+name = "logical_verification_2019"
+version = "1.0"
+lean_version = "3.4.1"
+path = "src"
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "81a31ca4a8c0287bf0b0ce40f1a0df16543b7abe"}
