@@ -127,7 +127,7 @@ as we upload them.
 
 * `update-mathlib`
 
-* `leanpkg build` (will take some time)
+* `leanpkg build`
 
 * launch VScode, either through your application menu or by typing `code`
 
@@ -208,7 +208,7 @@ for example you can use `~/Documents`.
 
 * `update-mathlib`
 
-* `leanpkg build` (will take some time)
+* `leanpkg build`
 
 * open VScode again
 
