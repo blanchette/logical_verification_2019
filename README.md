@@ -1,5 +1,9 @@
 # Logical Verification 2019 - Installation Instructions
 
+We have installation instructions for Windows, Linux, and MacOS.
+As a backup plan, we prepared a virtual machine on which
+Lean is already installed.
+
 <details><summary>Windows</summary>
 
 ## Windows
@@ -219,5 +223,22 @@ exercises and homework in the `lean` folder,
 as we upload them.
 
 * You can retrieve the newest exercises and homework that we upload by clicking the two arrows forming a circle in the bottom left corner.
+
+</details>
+
+
+<details><summary>Virtual Machine (for any operating system)</summary>
+
+* Download and install VirtualBox: https://www.virtualbox.org/
+(Other virtualization software should also work)
+
+* Download the virtual machine:
+https://drive.google.com/drive/folders/15R22c3iiYn4a2USkOFU6PvW6KbsS4-B0?usp=sharing
+
+* Open VirtualBox and import the downloaded file via `File > Import Appliance`.
+
+* Start the virtual machine by clicking the `Start` button.
+
+* Open VSCode by clicking on the blue ribbon on the left.
 
 </details>
