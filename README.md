@@ -235,10 +235,19 @@ as we upload them.
 * Download the virtual machine:
 https://drive.google.com/drive/folders/15R22c3iiYn4a2USkOFU6PvW6KbsS4-B0?usp=sharing
 
-* Open VirtualBox and import the downloaded file via `File > Import Appliance`.
+* Open VirtualBox
 
-* Start the virtual machine by clicking the `Start` button.
+* Import the downloaded file via `File > Import Appliance`
 
-* Open VSCode by clicking on the blue ribbon on the left.
+* Select the `.ova` file you downloaded, click `continue` and then `import`.
+
+* Start the virtual machine by 
+selecting `logical_verification_2019` and clicking the `Start` button
+and wait for the system to boot.
+
+* Open VSCode by clicking on the blue ribbon icon on the left.
+
+* In case you need the password for the virtual machine at some point,
+it is `love`.
 
 </details>
