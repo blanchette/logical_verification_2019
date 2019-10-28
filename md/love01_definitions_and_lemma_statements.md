@@ -97,7 +97,7 @@ Lean at VU Amsterdam:
 
 [Web site](https://lean-forward.github.io/logical-verification/2019/index.html)
 
-[Installation instructions](https://lean-forward.github.io/logical-verification/2019/index.html#installation)
+[Installation instructions](https://github.com/blanchette/logical_verification_2019/blob/master/README.md#logical-verification-2019---installation-instructions)
 
 [Repository](https://github.com/blanchette/logical_verification_2019) (for [lecture notes](https://github.com/blanchette/logical_verification_2019/blob/master/logical_verification_in_lean.pdf), "slides", exercises, and homework)
 
