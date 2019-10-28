@@ -75,7 +75,7 @@ A new proof assistant developed primarily by [Leonardo de Moura](https://www.mic
 
 Its mathematical library, `mathlib`, is developed under the leadership of [Jeremy Avigad](http://www.andrew.cmu.edu/user/avigad/) (Carnegie Mellon University)
 
-* we use **version 3.4.1** (likely the last release before Lean 4)
+* we use **version 3.4.2** (likely the last release before Lean 4)
 * we use its basic libraries and `mathlib`
 * Lean is a research project, with some rough edges
 
@@ -185,7 +185,7 @@ Definition of type `nat` (= `ℕ`) of natural numbers (in Peano-style unary nota
 
 A type `aexp` of arithmetic expressions:
 
-    inductive aexp
+    inductive aexp : Type
     | num : ℤ → aexp
     | var : string → aexp
     | add : aexp → aexp → aexp
