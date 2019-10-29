@@ -33,8 +33,8 @@ search bar.
 * Check `Add Python 3.7 to PATH`.
 * Click on `Install Now`.
 * Navigate to the folder where Python was installed. A reliable way to do this is to search for `python` in the Start Menu -> right click `Python 3.x (xx-bit)` -> open file location -> right click `Python 3.x (xx-bit)` -> open file location. The default location is something like `C:\Users\<user>\AppData\Local\Programs\Python\Python37-32`.
-* Copy the file `python.exe` to `python3.exe`.
-* Open Git Bash (type `git bash` in the Start Menu)
+* Create a copy of the file `python.exe` called `python3.exe`.
+* Open Git Bash (type `Git Bash` in the Start Menu)
 * Test whether everything is working by typing `python3 --version` and `pip3 --version`. If both commands give a short output and no error, everything is set up correctly.
 * If `pip3 --version` doesn't give any output, run the command `python3 -m pip install --upgrade pip`, which should fix it.
 
