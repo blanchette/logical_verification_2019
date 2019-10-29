@@ -25,8 +25,6 @@ search bar.
 
 * Run `echo 'PATH="$HOME/.elan/bin:$PATH"' >> $HOME/.profile`
 
-* Run `source $HOME/.elan/env`
-
 * Close Git Bash
 
 ### Get Python
