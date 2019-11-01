@@ -77,8 +77,7 @@ lemma mul_assoc (l m n : ℕ) :
 commutativity at a specific position, instantiate the rule by passing some
 arguments (e.g., `mul_comm _ l`). -/
 
-lemma add_mul (l m n : ℕ) :
-  mul (add l m) n = add (mul n l) (mul n m) :=
+lemma add_mul (l m n : ℕ) : mul (add l m) n = add (mul n l) (mul n m) :=
 sorry
 
 
@@ -100,16 +99,14 @@ namespace, because this would defeat the purpose of the exercise. -/
 
 Hint: You will need `or.elim` and `false.elim`. -/
 
-lemma peirce_of_em :
-  excluded_middle → peirce :=
+lemma peirce_of_em : excluded_middle → peirce :=
 sorry
 
 /- 3.2 (**optional**). Prove the following implication using tactics.
 
 Hint: Try instantiating `b` with `false` in Peirce's law. -/
 
-lemma dn_of_peirce :
-  peirce → double_negation :=
+lemma dn_of_peirce : peirce → double_negation :=
 sorry
 
 /- We leave the missing implication for the homework: -/
