@@ -61,15 +61,15 @@ exists.intro 0 (by refl)
 lemma and_swap (a b : Prop) :
   a ∧ b → b ∧ a :=
 assume hab : a ∧ b,
-have ha : a := hab.left,
-have hb : b := hab.right,
+have ha : a := and.elim_left hab,
+have hb : b := and.elim_right hab,
 show b ∧ a, from and.intro hb ha
 
 lemma and_swap₂ (a b : Prop) :
   a ∧ b → b ∧ a :=
 assume hab : a ∧ b,
-have ha : a := hab.left,
-have hb : b := hab.right,
+have ha : a := and.elim_left hab,
+have hb : b := and.elim_right hab,
 begin
   apply and.intro,
   { exact hb },
