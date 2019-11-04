@@ -11,7 +11,7 @@ Structured proofs are syntactic sugar sprinkled on top of Lean's proof terms: Al
 
 ### Lemma Name
 
-The simplest kind of structured proof is the name of a lemma
+The simplest kind of structured proof is the name of a lemma, possibly with arguments
 
 ### `assume`
 
