@@ -21,6 +21,17 @@ inductive even : ℕ → Prop
 #print Exists
 #print eq
 
+#check nat.le.dest
+
+lemma nat.le.dest2 :
+  ∀n m : ℕ, n ≤ m → ∃k, k + n = m :=
+begin
+  intros n m h_gt,
+  cases @nat.le.dest n m h_gt with k nk_eq_m,
+  use k,
+  linarith
+end
+
 
 /- Example: Full Binary Trees -/
 
