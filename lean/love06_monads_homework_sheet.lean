@@ -87,9 +87,9 @@ sorry
 
 /- 2.2. Prove the monadic laws for `list`.
 
-**Hint:** The simplifier cannot see through the type class definition of `pure`. You can use
-`pure_eq_singleton` to unfold the definition or `show` to state the lemma statement using `bind` and
-`[...]`. -/
+**Hint:** The simplifier cannot see through the type class definition of `pure`.
+You can use `pure_eq_singleton` to unfold the definition or `show` to state the
+lemma statement using `bind` and `[…]`. -/
 
 lemma pure_bind {α β : Type} (a : α) (f : α → list β) :
   (pure a >>= f) = f a :=
