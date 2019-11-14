@@ -91,18 +91,20 @@ sorry
 `pure_eq_singleton` to unfold the definition or `show` to state the lemma statement using `bind` and
 `[...]`. -/
 
-lemma pure_bind {α β : Type} (a : α) (f : α → list β) : (pure a >>= f) = f a :=
+lemma pure_bind {α β : Type} (a : α) (f : α → list β) :
+  (pure a >>= f) = f a :=
 sorry
 
-lemma bind_pure {α : Type} : ∀l : list α, l >>= pure = l
+lemma bind_pure {α : Type} :
+  ∀as : list α, as >>= pure = as
 := sorry
 
 lemma bind_assoc {α β γ : Type} (f : α → list β) (g : β → list γ) :
-  ∀l : list α, (l >>= f) >>= g = l >>= (λa, f a >>= g)
+  ∀as : list α, (as >>= f) >>= g = as >>= (λa, f a >>= g)
 := sorry
 
 lemma bind_pure_comp_eq_map {α β : Type} {f : α → β} :
-  ∀l : list α, l >>= (pure ∘ f) = list.map f l
+  ∀as : list α, as >>= (pure ∘ f) = list.map f as
 := sorry
 
 end list
