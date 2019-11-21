@@ -65,7 +65,7 @@ Syntax:
 > `...` _op2_ _expr2_ `:` _proof2_
 >
 >  ⋮
-> 
+>
 > `...` _opN_ _exprN_ `:` _proofN_
 
 The horizontal dots (`...`) are part of the syntax
@@ -81,7 +81,7 @@ As alternative to the `induction` tactic, induction can also be done by pattern 
 
 A few hints on how to carry out proofs by induction:
 
- * perform induction following the structure of thedefinition of one of the functions appearing in the goal
+ * perform induction following the structure of the definition of one of the functions appearing in the goal
 
  * if the base case (e.g., `0`, `[]`) of an induction is difficult, this is a sign the wrong variable was chosen or some lemmas are missing
 

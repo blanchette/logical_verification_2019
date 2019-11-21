@@ -126,7 +126,7 @@ Performs structural induction on the specified variable
 
 Gives rise to as many subgoals as there are constructors in the definition of the variable's type
 
-Induction hypotheses are available as hypotheses in the subgoals corresponding to recursive constructiors (e.g., `nat.succ`)
+Induction hypotheses are available as hypotheses in the subgoals corresponding to recursive constructors (e.g., `nat.succ`)
 
 
 ## Goal Management Tactics

@@ -49,9 +49,9 @@ This corresponds to the difference between deep and shallow embeddings:
 
 * A **deep embedding** of some syntax (expression, formula, program, etc.) consists of an abstract syntax tree specified in the proof assistant (e.g. `aexp`) with a semantics
 
-* In contrast, a **shallow embedding** simply reuses the corresponding mechanisms from the logic (e.g. λ-terms, functions and predictate types)
+* In contrast, a **shallow embedding** simply reuses the corresponding mechanisms from the logic (e.g. λ-terms, functions and predicate types)
 
-A deep embedding allows us to reason explictly about the syntax (and the semantics)
+A deep embedding allows us to reason explicitly about the syntax (and the semantics)
 
 A shallow embedding is more lightweight, because we can use it directly, without having to define a semantics
 
@@ -65,7 +65,7 @@ Examples:
 
 ## Big-Step Semantics
 
-An _operational semantics_ correponds to an idealized, abstract interpreter (specified in a Prolog-like language)
+An _operational semantics_ corresponds to an idealized, abstract interpreter (specified in a Prolog-like language)
 
 Two main variants:
 

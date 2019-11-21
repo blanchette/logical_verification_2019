@@ -77,7 +77,7 @@ The tactic monad is an `alternative`, with `fail` and `<|>` (exercise 6)
 
 The reflected expression type:
 
-    meta inductive expr
+    meta inductive expr : Type
     | var      {} : nat → expr
     | sort     {} : level → expr
     | const    {} : name → list level → expr
