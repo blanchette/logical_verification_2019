@@ -88,7 +88,7 @@ namespace complete_lattice
 variables {α : Type} [complete_lattice α]
 
 def lfp (f : α → α) : α :=
-Inf ({x | f x ≤ x})
+Inf {x | f x ≤ x}
 
 lemma lfp_le (f : α → α) (a : α) (h : f a ≤ a) :
   lfp f ≤ a :=
@@ -102,15 +102,15 @@ lemma lfp_eq (f : α → α) (hf : monotone f) :
   lfp f = f (lfp f) :=
 begin
   have h : f (lfp f) ≤ lfp f :=
-  begin
-    apply le_lfp,
-    intros a' ha',
-    apply @le_trans _ _ _ (f a'),
-    { apply hf,
-      apply lfp_le,
-      assumption },
-    { assumption }
-  end,
+    begin
+      apply le_lfp,
+      intros a' ha',
+      apply @le_trans _ _ _ (f a'),
+      { apply hf,
+        apply lfp_le,
+        assumption },
+      { assumption }
+    end,
   apply le_antisymm,
   { apply lfp_le,
     apply hf,
@@ -124,7 +124,7 @@ end complete_lattice
 /- Relations -/
 
 def Id (α : Type) : set (α × α) :=
-{ x | x.2 = x.1 }
+{x | x.2 = x.1}
 
 @[simp] lemma mem_Id {α : Type} (a b : α) :
   (a, b) ∈ Id α ↔ b = a :=
@@ -242,20 +242,22 @@ lemma big_step_of_den :
   end
 | (while b S)   s t :=
   begin
-    have hw : ⟦while b S⟧ ≤ {x | (while b S, x.1) ⟹ x.2},
-    { apply complete_lattice.lfp_le _ _ _,
-      intros x hx,
-      cases x with s t,
-      simp at hx,
-      cases hx,
-      { cases hx with hs hst,
-        cases hst with u hu,
-        apply big_step.while_true hs,
-        { exact big_step_of_den S _ _ (and.elim_left hu) },
-        { exact and.elim_right hu } },
-      { cases hx,
-        cases hx_right,
-        apply big_step.while_false hx_left } },
+    have hw : ⟦while b S⟧ ≤ {x | (while b S, x.1) ⟹ x.2} :=
+      begin
+        apply complete_lattice.lfp_le _ _ _,
+        intros x hx,
+        cases x with s t,
+        simp at hx,
+        cases hx,
+        { cases hx with hs hst,
+          cases hst with u hu,
+          apply big_step.while_true hs,
+          { exact big_step_of_den S _ _ (and.elim_left hu) },
+          { exact and.elim_right hu } },
+        { cases hx,
+          cases hx_right,
+          apply big_step.while_false hx_left }
+      end,
     apply hw
   end
 
